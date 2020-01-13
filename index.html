@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" lang="ru" content="Anastasiya Grigorieva">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>Clock</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div id="errors"></div>
+
+	<div class="selectcity">
+		<label for="city"></label>
+		<select name="city" id="city">
+			<option value="" selected="selected">Мой часовой пояс</option>
+			<option value="Europe/London">Europe/London</option>
+			<option value="America/Argentina/Salta">America/Argentina/Salta</option>
+		</select>
+	</div>
+
+    <div class="tabs">
+        <input class="tabs__tab" type="radio" id="tabs__tab1" name="tabstab" checked="checked">
+        <label class="tabs__title" for="tabs__tab1">Электронные</label>
+        <div class="tabs__text">
+			<div class="ampm">
+				<input type="checkbox" name="pm" id="pm" value="1" checked="checked">
+				<label for="pm">24-часовой формат</label>
+			</div>
+	
+            <div id="clock" class="clock">
+                <span class="hour"></span>:<span class="min"></span><!-- :<span class="sec"></span -->
+            </div>
+			<div id="today" class="date">
+                dd mm YY
+            </div>
+        </div>
+
+        <input class="tabs__tab" type="radio" id="tabs__tab2" name="tabstab">
+        <label class="tabs__title" for="tabs__tab2">Аналоговые</label>
+        <div class="tabs__text tabs__text_analog">
+            <canvas height='300' width='300' id='analogclock'>У вашего браузера нет поддержки canvas.</canvas>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

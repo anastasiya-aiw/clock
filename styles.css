@@ -1,0 +1,135 @@
+body, html{font-family: 'Roboto', sans-serif;}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+#errors {
+  color: red;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin:0 auto;
+}
+@media (max-width: 600px) {
+  .tabs {
+    max-width: 100%;
+  }
+}
+.tabs__tab {
+  display: none;
+}
+.tabs__title {
+    width: 1px;
+    flex-grow: 1;
+    order: -1;
+    color: #ffffff;
+    background-color: cadetblue;
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tabs__text {
+    display: none;
+    flex-grow: 2;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 20px;
+    background-color: honeydew;
+}
+.tabs__tab:checked+.tabs__title {
+    color: #000000;
+    background-color: honeydew;
+}
+.tabs__tab:checked+.tabs__title+.tabs__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.tabs__title:hover {
+  opacity: 0.9;
+}
+
+.tabs__text_analog {
+  padding: 2rem;
+  text-align: center;
+}
+
+.clock {
+  display: inline-block;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.date {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.ampm {
+  display: inline-block;
+  width: 49%;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.ampm input[type=checkbox] {
+  display: none;
+}
+.ampm label {
+  margin-left: 1rem;
+  border-bottom: 2px dotted #000000;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.selectcity {
+  display: inline-block;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size:1.2rem;
+}
+.selectcity select,
+.selectcity option {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .selectcity {
+    width: 100%;
+    text-align: center;
+  }
+  .clock {
+    font-size: 3rem;
+  }
+  .ampm {
+    width:100%;
+    margin-top:0;
+    text-align:center;
+  }
+  .ampm label {
+    margin-left:0;
+    font-size: 1rem;
+  }
+  .date {
+    font-size: 1.5rem;
+  }
+}
