@@ -1,3 +1,3 @@
-http://miresume.ru/tmp/clock/
-Цифровые и аналоговые часы
-синхронизация времени с http://worldtimeapi.org
+# Цифровые и аналоговые часы
+# синхронизация времени раз в минуту с http://worldtimeapi.org
+# Демо - http://miresume.ru/tmp/clock/
