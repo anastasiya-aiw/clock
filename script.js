@@ -22,7 +22,7 @@ var analogClock;
 
 
 // init: get date&time from site
-var currentTimezoneURL = "http://worldtimeapi.org/api/ip";
+var currentTimezoneURL = "https://worldtimeapi.org/api/ip";
 var getJSON = function (url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
