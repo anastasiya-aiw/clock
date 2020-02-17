@@ -118,7 +118,7 @@ function changePmFormat(){
 }
 
 /* изменить город+часовой пояс */
-var timezoneURL = "http://worldtimeapi.org/api/timezone/";
+var timezoneURL = "https://worldtimeapi.org/api/timezone/";
 var selectCity = document.getElementById('city');
 selectCity.addEventListener("change", changeCity, false);
 function changeCity(){
