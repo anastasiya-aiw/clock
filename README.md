@@ -2,4 +2,4 @@
 
 Синхронизация времени раз в минуту с http://worldtimeapi.org
 
-Демо - http://miresume.ru/tmp/clock/
+Демо - https://anastasiya-aiw.github.io/clock/index.html
